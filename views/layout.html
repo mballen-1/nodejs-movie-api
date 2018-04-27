@@ -14,7 +14,7 @@
 
     <!-- Fonts -->
         <!-- Font awesome - icon font -->
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
         <!-- Roboto -->
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,700' rel='stylesheet' type='text/css'>
         <!-- Open Sans -->
@@ -23,58 +23,768 @@
     <!-- Stylesheets -->
 
         <!-- Mobile menu -->
-        <link href="./../css/gozha-nav.css" rel="stylesheet" />
+        <link href="./static/css/gozha-nav.css" rel="stylesheet" type='text/css' />
         <!-- Select -->
-        <link href="./../css/external/jquery.selectbox.css" rel="stylesheet" />
+        <link href="./static/css/external/jquery.selectbox.css" rel="stylesheet" type='text/css' />
 
         <!-- Slider Revolution CSS Files -->
-        <link rel="stylesheet" type="text/css" href="./../revolution/css/settings.css">
-        <link rel="stylesheet" type="text/css" href="./../revolution/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="./../revolution/css/navigation.css">
+        <link rel="stylesheet" type='text/css' href="./static/revolution/css/settings.css">
+        <link rel="stylesheet" type='text/css' href="./static/revolution/css/layers.css">
+        <link rel="stylesheet" type='text/css' href="./static/revolution/css/navigation.css"> -->
 
         <!-- Custom -->
-        <link href="./../css/style.css?v=1" rel="stylesheet" />
+        <link href="./static/css/style.css?v=1" rel="stylesheet" type='text/css' />
 
 
         <!-- Modernizr -->
-        <script src="./../js/external/modernizr.custom.js"></script>
+        <script src="./static/js/external/modernizr.custom.js"></script>
 
 
 </head>
+
 <body>
     <div class="wrapper">
+        <!-- Banner -->
+        <!-- <div class="banner-top">
+            <img alt='top banner' src="images/banners/bra.jpg">
+        </div> -->
+
+        <!-- Header section -->
         <header class="header-wrapper header-wrapper--home">
-                <div class="container">
-                    <!-- Logo link-->
-                    <a href='index.html' class="logo">
-                        <img alt='logo' src="./../images/logo.png">
-                    </a>
-            
-                    <!-- Main website navigation-->
-                    <nav id="navigation-box">
-                        <!-- Toggle for mobile menu mode -->
-                        <a href="#" id="navigation-toggle">
-                            <span class="menu-icon">
-                                <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
-                                  <span class="lines"></span>
-                                </span>
+            <div class="container">
+                <!-- Logo link-->
+                <a href='index.html' class="logo">
+                    <img alt='logo' src="./static/images/logo.png">
+                </a>
+
+                <!-- Main website navigation-->
+                <nav id="navigation-box">
+                    <!-- Toggle for mobile menu mode -->
+                    <a href="#" id="navigation-toggle">
+                        <span class="menu-icon">
+                            <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
+                              <span class="lines"></span>
                             </span>
-                        </a>
-            
-                        <!-- Link navigation -->
-                        <ul id="navigation">
-            
-                        </ul>
-                    </nav>
+                        </span>
+                    </a>
+
+                    <!-- Link navigation -->
+                    <ul id="navigation">
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Slider -->
+        <div class="bannercontainer rev_slider_wrapper">
+
+            <!-- the ID here will be used in the JavaScript below to initialize the slider -->
+            <div id="rev_slider_1" class="banner rev_slider" style="display:none">
+
+                <!-- BEGIN SLIDES LIST -->
+                <ul>
+                    <!-- SLIDE 1 -->
+                    <li data-transition="fade" class="slide" data-title='Rush.'>
+
+                        <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                        <img class="rev-slidebg" alt='' src="./static/images/slides/first-slide.jpg">
+
+                        <div class="tp-caption slide__name margin-slider"
+                             data-x="right"
+                             data-y="80"
+                             data-frames='[{
+                               "delay":300,
+                               "split":"chars",
+                               "splitdelay":0.1,
+                               "speed":700,
+                               "frame":"0",
+                               "from":"x:[-100%];opacity:0;",
+                               "mask":"x:0px;y:0px;s:inherit;e:inherit;",
+                               "to":"o:1;",
+                               "ease":"Power4.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                            RUSH
+                        </div>
+
+                        <div class="tp-caption n slide__time margin-slider"
+                            data-x="right"
+                            data-hoffset='250'
+                            data-y="186"
+                            data-frames='[{
+                               "delay":1200,
+                               "speed":300,
+                               "frame":"0",
+                               "from":"x:[50%];opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                            From
+                        </div>
+
+                        <div class="tp-caption  slide__date margin-slider"
+                             data-x="right"
+                             data-hoffset='149'
+                             data-y="186"
+                             data-frames='[{
+                               "delay":1700,
+                               "speed":500,
+                               "frame":"0",
+                               "from":"y:100px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             October 18
+                        </div>
+                        <div class="tp-caption slide__time margin-slider"
+                             data-x="right"
+                             data-hoffset='120'
+                             data-y="186"
+                             data-frames='[{
+                               "delay":1200,
+                               "speed":300,
+                               "frame":"0",
+                               "from":"x:[50%];opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             till
+                        </div>
+                        <div class="tp-caption slide__date margin-slider"
+                             data-x="right"
+                             data-y="186"
+                             data-frames='[{
+                               "delay":1700,
+                               "speed":500,
+                               "frame":"0",
+                               "from":"y:100px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             November 01
+                        </div>
+                        <div class="tp-caption slide__text margin-slider text-right"
+                             data-x="right"
+                             data-y="250"
+                             data-frames='[{
+                               "delay":2300,
+                               "speed":400,
+                               "frame":"0",
+                               "from":"y:100px;skX:50px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             Two-time Academy Award winner Ron Howard, teams once again with fellow two-time Academy<br> Award nominee, writer Peter Morgan , on Rush, a spectacular big-screen re-creation of the merciless<br> 1970s rivalry between James Hunt and Niki Lauda
+                        </div>
+                        <div class="tp-caption margin-slider"
+                             data-x="right"
+                             data-y="324"
+                             data-frames='[{
+                               "delay":2600,
+                               "speed":400,
+                               "frame":"0",
+                               "from":"y:100px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             <a href="#" class="slide__link">check out cinemas &amp; time</a>
+                        </div>
+
+                    </li>
+
+                    <!-- SLIDE 2 -->
+                    <li data-transition="fade" class="slide" data-title='Travel worldwide. Create trip film.'>
+
+                        <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                        <img class="rev-slidebg" alt='' src="./static/images/bg-video.jpg">
+                        <div class="rs-background-video-layer"
+                             data-forcerewind="on"
+                             data-volume="mute"
+                             data-videowidth="100%"
+                             data-videoheight="100%"
+                             data-videomp4="./static/video/TravelIs.mp4"
+                             data-videopreload="auto"
+                             data-videoloop="loop"
+                             data-forceCover="1"
+                             data-aspectratio="16:9"
+                             data-autoplay="true"
+                             data-autoplayonlyfirsttime="false"
+                        ></div>
+                        <div class="tp-caption slide__name slide__name--smaller"
+                             data-x="center"
+                             data-y="160"
+
+                             data-splitin="chars"
+                             data-elementdelay="0.1"
+
+                             data-speed="700"
+                             data-start="1400"
+                             data-easing="easeOutBack"
+
+                             data-frames='[{
+                               "delay":1400,
+                               "speed":700,
+                               "split":"chars",
+                               "splitdelay":0.1,
+                               "frame":"0",
+                               "from":"opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                            Travel, Admire, Remember.
+                        </div>
+                        <div class="tp-caption slide__time"
+                             data-x="center"
+                             data-hoffset='-115'
+                             data-y="242"
+                             data-frames='[{
+                               "delay":1800,
+                               "speed":300,
+                               "frame":"0",
+                               "from":"x:[50%];opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             From
+                        </div>
+                        <div class="tp-caption slide__date position-center postion-place--two lfb ltb"
+                             data-x="center"
+                             data-hoffset='-50'
+                             data-y="242"
+                             data-frames='[{
+                               "delay":2200,
+                               "speed":500,
+                               "frame":"0",
+                               "from":"y:100px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             April 18
+                        </div>
+                        <div class="tp-caption slide__time"
+                             data-x="center"
+                             data-hoffset='5'
+                             data-y="242"
+                             data-frames='[{
+                               "delay":1800,
+                               "speed":300,
+                               "frame":"0",
+                               "from":"x:[50%];opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             - till
+                        </div>
+                        <div class="tp-caption slide__date"
+                             data-x="center"
+                             data-hoffset='60'
+                             data-y="242"
+                             data-frames='[{
+                               "delay":2200,
+                               "speed":500,
+                               "frame":"0",
+                               "from":"y:100px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             May 01
+                        </div>
+
+                        <div class="tp-caption slider-wrap-btn"
+                             data-x="center"
+                             data-y="310"
+                             data-frames='[{
+                               "delay":2800,
+                               "speed":400,
+                               "frame":"0",
+                               "from":"y:100px;opacity:0;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                             <a href="#" class="btn btn-md btn--danger btn--wide slider--btn">learn more</a>
+                        </div>
+                    </li>
+
+                    <!-- SLIDE 3 -->
+                    <li data-transition="fade" class="slide" data-title='Stop wishing. Start doing.'>
+
+                        <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
+                        <img class="rev-slidebg" alt='' src="./static/images/slides/next-slide.jpg">
+                        <div class="tp-caption slide__name slide__name--smaller slide__name--specific"
+                          data-x="center"
+                          data-y="160"
+                          data-frames='[{
+                               "delay":1400,
+                               "speed":700,
+                               "frame":"0",
+                               "from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;",
+                               "mask":"x:0px;y:[100%];s:inherit;e:inherit;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                            Stop <span class="highlight">wishing.</span> Start <span class="highlight">doing.</span>
+                        </div>
+
+                        <div class="tp-caption slide__descript"
+                            data-x="center"
+                            data-y="240"
+                            data-frames='[{
+                               "delay":2000,
+                               "speed":500,
+                               "frame":"0",
+                               "from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;",
+                               "mask":"x:0px;y:[100%];s:inherit;e:inherit;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                            find your best match movie with A.MOVIE
+                        </div>
+
+                        <div class="tp-caption slider-wrap-btn"
+                            data-x="center"
+                            data-y="310"
+                            data-frames='[{
+                               "delay":2500,
+                               "speed":500,
+                               "frame":"0",
+                               "from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;",
+                               "mask":"x:0px;y:[100%];s:inherit;e:inherit;",
+                               "to":"o:1;",
+                               "ease":"Power3.easeInOut"
+                               },{
+                               "delay":"wait",
+                               "speed":300,
+                               "frame":"999",
+                               "to":"opacity:0;",
+                               "ease":"Power3.easeInOut"
+                             }]'>
+                            <a href="#" class="btn btn-md btn--danger slider--btn">check out movies</a>
+                        </div>
+                    </li>
+
+
+                </ul><!-- END SLIDES LIST -->
+
+            </div><!-- END SLIDER CONTAINER -->
+
+        </div><!-- END SLIDER CONTAINER WRAPPER -->
+        <!--end slider -->
+
+
+        <!-- Main content -->
+        <section class="container">
+            <div class="movie-best">
+                 <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Today Best choice</div>
+                 <div class="col-sm-12 change--col">
+                     <div class="movie-beta__item ">
+                        <img alt='' src="./static/images/movie/movie-sample1.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-full.hml" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item second--item">
+                         <img alt='' src="./static/images/movie/movie-sample2.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-full.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item third--item">
+                         <img alt='' src="./static/images/movie/movie-sample3.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-full.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs">
+                         <img alt='' src="./static/images/movie/movie-sample4.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-full.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs hidden-sm">
+                         <img alt='' src="./static/images/movie/movie-sample5.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-full.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                     <div class="movie-beta__item hidden-xs hidden-sm">
+                         <img alt='' src="./static/images/movie/movie-sample6.jpg">
+                         <span class="best-rate">5.0</span>
+
+                         <ul class="movie-beta__info">
+                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li>
+                                <p class="movie__time">169 min</p>
+                                <p>Adventure | Drama | Fantasy </p>
+                                <p>38 comments</p>
+                             </li>
+                             <li class="last-block">
+                                 <a href="movie-page-full.html" class="slide__link">more</a>
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+                <div class="col-sm-10 col-sm-offset-1 movie-best__check">check all movies now playing</div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="mega-select-present mega-select-top mega-select--full">
+                    <div class="mega-select-marker">
+                        <div class="marker-indecator location">
+                            <p class="select-marker"><span>Look for that movie</span> <br>you love</p>
+                        </div>
+                    </div>
+
+                      <div class="mega-select pull-right">
+                          <span class="mega-select__point">Search by</span>
+                          <ul class="mega-select__sort">
+                              <li class="filter-wrap"><a href="#" class="mega-select__filter filter--active" data-filter='location'>Movie</a></li>
+                          </ul>
+
+                          <input name="search-input" type='text' class="select__field">
+
+                          <div class="select__btn">
+                            <a href="#" class="btn btn-md btn--danger location">find <span class="hidden-exrtasm">movies</span></a>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <h2 id='target' class="page-heading heading--outcontainer">Now in the cinema</h2>
+
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--dark movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                        <img alt='' src="./static/images/movie/movie-time8.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">Gravity (2013)  </a>
+
+                                    <p class="movie__time">91 min</p>
+
+                                    <p class="movie__option"><a href="#">Sci-Fi</a> | <a href="#">Thriller</a> | <a href="#">Drama</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">4.1</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--light movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time1.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">The Hobbit: The Desolation of Smaug (2013)  </a>
+
+                                    <p class="movie__time">169 min</p>
+
+                                    <p class="movie__option"><a href="#">Adventure</a> | <a href="#">Fantasy</a> | <a href="#">Drama</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--light movie--test--right">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time9.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">The Hunger Games: Catching Fire (2013)   </a>
+
+                                    <p class="movie__time">146 min</p>
+
+                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Sci-Fi</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--dark movie--test--right">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time10.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">Thor: The Dark World (2013) </a>
+
+                                    <p class="movie__time">112 min</p>
+
+                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Fantasy</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--dark movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time11.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">World War Z (2013)  </a>
+
+                                    <p class="movie__time">116 min</p>
+
+                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Horror</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">4.1</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--light movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time12.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">Prisoners (2013) </a>
+
+                                    <p class="movie__time">153 min</p>
+
+                                    <p class="movie__option"><a href="#">Crime</a> | <a href="#">Thriller</a> | <a href="#">Drama</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--light movie--test--right">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time13.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">This Is the End (2013)   </a>
+
+                                    <p class="movie__time">107 min</p>
+
+                                    <p class="movie__option"><a href="#">Comedy</a> | <a href="#">Fantasy</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">4.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--dark movie--test--right">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="./static/images/movie/movie-time14.jpg">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">The Internship (2013)  </a>
+
+                                    <p class="movie__time">112 min</p>
+
+                                    <p class="movie__option"><a href="#">Comedy</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+                    </div>
                 </div>
-            </header>
-{% block slider %}
-{% endblock %}
+            </div>
+        </section>
 
-{% block main-content %}
-{% endblock %}
-
-<div class="clearfix"></div>
+        <div class="clearfix"></div>
 
         <footer class="footer-wrapper">
             <section class="container">
@@ -159,48 +869,47 @@
             </section>
         </div>
 
-
-<!-- JavaScript-->
+	<!-- JavaScript-->
         <!-- jQuery 3.1.1-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="./../js/external/jquery-3.1.1.min.js"><\/script>')</script>
+        <script>window.jQuery || document.write('<script src="./static/js/external/jquery-3.1.1.min.js"><\/script>')</script>
         <!-- Migrate -->
-        <script src="./../js/external/jquery-migrate-1.2.1.min.js"></script>
+        <script src="./static/js/external/jquery-migrate-1.2.1.min.js"></script>
         <!-- Bootstrap 3-->
         <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
 
         <!-- Slider Revolution core JavaScript files -->
-        <script type="text/javascript" src="./..revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/jquery.themepunch.revolution.min.js"></script>
 
         <!-- Slider Revolution extension scripts. -->
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="./..revolution/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="./static/revolution/js/extensions/revolution.extension.video.min.js"></script>
 
         <!-- Mobile menu -->
-        <script src="./..js/jquery.mobile.menu.js"></script>
+        <script src="./static/js/jquery.mobile.menu.js"></script>
          <!-- Select -->
-        <script src="./..js/external/jquery.selectbox-0.2.min.js"></script>
+        <script src="./static/js/external/jquery.selectbox-0.2.min.js"></script>
         <!-- Stars rate -->
-        <script src="./..js/external/jquery.raty.js"></script>
+        <script src="./static/js/external/jquery.raty.js"></script>
 
         <!-- Form element -->
-        <script src="./..js/external/form-element.js"></script>
+        <script src="./static/js/external/form-element.js"></script>
         <!-- Form validation -->
-        <script src="./..js/form.js"></script>
+        <script src="./static/js/form.js"></script>
 
         <!-- Twitter feed -->
-        <script src="./../js/external/twitterfeed.js"></script>
+        <script src="./static/js/external/twitterfeed.js"></script>
 
         <!-- Custom -->
-        <script src="./..js/custom.js"></script>
+        <script src="./static/js/custom.js"></script>
 
 	      <script type="text/javascript">
               $(document).ready(function() {

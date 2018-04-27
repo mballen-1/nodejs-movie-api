@@ -1,7 +1,10 @@
-var express = require('express'); //modulo para parte de routing 
+var express = require('express');
 var nunjucks = require('nunjucks');
-const apis = require('./endpoints');
+
 var app = express();
+console.log("dirname: "+__dirname);
+app.use('/static', express.static(__dirname + '/static'));
+
 
 // Setup nunjucks templating engine
 nunjucks.configure('views', {
@@ -14,7 +17,7 @@ app.set('port', process.env.PORT || 3000);
 // Home page
 app.get('/', function(req, res) {
     res.render('layout.html', {
-        page: 'example',
+        page: 'home',
         port: app.get('port')
     });
 });
@@ -27,28 +30,13 @@ app.get('/example', function(req, res) {
     });
 });
 
-// search example
-app.get('/search', function(req, res) {
-    res.render('search.html', {
-        page: 'search',
-        port: app.get('port')
-    });
+// Kick start our server
+app.listen(app.get('port'), function() {
+    console.log('Server started on port', app.get('port'));
 });
-/* 
-//result route
-app.get('/result', function(req, res) {
-    apis.getMoviesByQueryTerm(req.query.search_input, function(response){
-        searchResultsData = response.data.data.movies
-        res.render('result.html', {
-            page: 'result',
-            port: app.get('port'),
-            term: req.query.search_input,
-            searchResultsData: searchResultsData
-        });
-    })   
-}); */
 
-//result with limit route
+
+//result route by search term and limit
 app.get('/result', function(request, res) {
     apis.getMoviesByQueryTermAndLimit(request.query.search_input, request.query.limit_value, function(response){
         searchResultsData = response.data.data.movies
@@ -59,11 +47,4 @@ app.get('/result', function(request, res) {
             searchResultsData: searchResultsData
         });
     })   
-});
-
-
-
-// Kick start our server
-app.listen(app.get('port'), function() {
-    console.log('Server started on port', app.get('port'));
 });

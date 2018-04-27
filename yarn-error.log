@@ -1,0 +1,94 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js version
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files\Java\jdk1.8.0_161\bin;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\HashiCorp\Vagrant\bin;C:\Program Files\nodejs\;C:\Users\mballen\AppData\Local\Programs\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.3.3\bin;C:\Users\mballen\AppData\Local\Microsoft\WindowsApps;C:\Users\mballen\AppData\Local\Programs\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Users\mballen\AppData\Roaming\Composer\vendor\bin;C:\Users\mballen\AppData\Local\GitHubDesktop\bin;C:\Users\mballen\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\Users\mballen\AppData\Local\Yarn\bin;
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  8.10.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "_from": "express-nunjucks-boilerplate",
+    "_id": "express-nunjucks-boilerplate@0.0.1",
+    "_inBundle": false,
+    "_integrity": "sha1-fe0TdjL6sa/YLbRzo/2eBNZh2zA=",
+    "_location": "/express-nunjucks-boilerplate",
+    "_phantomChildren": {},
+    "_requested": {
+      "type": "tag",
+      "registry": true,
+      "raw": "express-nunjucks-boilerplate",
+      "name": "express-nunjucks-boilerplate",
+      "escapedName": "express-nunjucks-boilerplate",
+      "rawSpec": "",
+      "saveSpec": null,
+      "fetchSpec": "latest"
+    },
+    "_requiredBy": [
+      "#USER",
+      "/"
+    ],
+    "_resolved": "https://registry.npmjs.org/express-nunjucks-boilerplate/-/express-nunjucks-boilerplate-0.0.1.tgz",
+    "_shasum": "7ded137632fab1afd82db473a3fd9e04d661db30",
+    "_spec": "express-nunjucks-boilerplate",
+    "_where": "C:\\Users\\mballen\\Documents\\Repositorios\\Internship\\Front-challenges\\nodejs-movie-challenge\\nodejs-movie-api",
+    "author": {
+      "name": "@iamstuartwilson"
+    },
+    "bugs": {
+      "url": "https://github.com/iamstuartwilson/express-nunjucks-boilerplate/issues"
+    },
+    "bundleDependencies": false,
+    "dependencies": {
+      "express": "^4.12.4",
+      "nunjucks": "^1.3.4"
+    },
+    "deprecated": false,
+    "description": "Express and Nunjucks. Pow!",
+    "devDependencies": {
+      "express-generator": "^4.12.4"
+    },
+    "homepage": "https://github.com/iamstuartwilson/express-nunjucks-boilerplate",
+    "keywords": [
+      "express",
+      "nunjucks",
+      "boilerplate"
+    ],
+    "license": "MIT",
+    "main": "app.js",
+    "name": "express-nunjucks-boilerplate",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/iamstuartwilson/express-nunjucks-boilerplate.git"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "0.0.1"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: canceled
+      at Interface.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:128791:13)
+      at emitNone (events.js:106:13)
+      at Interface.emit (events.js:208:7)
+      at Interface._ttyWrite (readline.js:775:16)
+      at ReadStream.onkeypress (readline.js:160:10)
+      at emitTwo (events.js:126:13)
+      at ReadStream.emit (events.js:214:7)
+      at emitKeys (internal/readline.js:420:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (readline.js:1011:36)
