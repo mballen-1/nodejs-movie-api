@@ -83,10 +83,10 @@
                 <!-- BEGIN SLIDES LIST -->
                 <ul>
                     <!-- SLIDE 1 -->
-                    <li data-transition="fade" class="slide" data-title='Rush.'>
+                    <li data-transition="fade" class="slide" data-title='{{searchResultsData[0].english_title}}'>
 
                         <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                        <img class="rev-slidebg" alt='' src="./static/images/slides/first-slide.jpg">
+                        <img class="rev-slidebg" alt='' src="{{searchResultsData[randomNumber].background_image_original}}">
 
                         <div class="tp-caption slide__name margin-slider"
                              data-x="right"
@@ -108,7 +108,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                            RUSH
+                            {{searchResultsData[randomNumber].title_english}}
                         </div>
 
                         <div class="tp-caption n slide__time margin-slider"
@@ -129,6 +129,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
+                             <br> 
                             From
                         </div>
 
@@ -149,7 +150,7 @@
                                "frame":"999",
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
-                             }]'>
+                             }]'>                             
                              October 18
                         </div>
                         <div class="tp-caption slide__time margin-slider"
@@ -208,7 +209,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                             Two-time Academy Award winner Ron Howard, teams once again with fellow two-time Academy<br> Award nominee, writer Peter Morgan , on Rush, a spectacular big-screen re-creation of the merciless<br> 1970s rivalry between James Hunt and Niki Lauda
+                             {{searchResultsData[randomNumber].summary}}
                         </div>
                         <div class="tp-caption margin-slider"
                              data-x="right"
@@ -233,16 +234,16 @@
                     </li>
 
                     <!-- SLIDE 2 -->
-                    <li data-transition="fade" class="slide" data-title='Travel worldwide. Create trip film.'>
+                    <li data-transition="fade" class="slide" data-title='{{searchResultsData[1].english_title}}'>
 
                         <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                        <img class="rev-slidebg" alt='' src="./static/images/bg-video.jpg">
+                        <img class="rev-slidebg" alt='' src="{{searchResultsData[1].background_image_original}}">
                         <div class="rs-background-video-layer"
                              data-forcerewind="on"
                              data-volume="mute"
                              data-videowidth="100%"
                              data-videoheight="100%"
-                             data-videomp4="./static/video/TravelIs.mp4"
+                             data-videomp4="{{searchResultsData[1].background_image_original}}"
                              data-videopreload="auto"
                              data-videoloop="loop"
                              data-forceCover="1"
@@ -277,7 +278,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                            Travel, Admire, Remember.
+                            {{searchResultsData[1].title_english}}
                         </div>
                         <div class="tp-caption slide__time"
                              data-x="center"
@@ -297,6 +298,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
+                             <br>
                              From
                         </div>
                         <div class="tp-caption slide__date position-center postion-place--two lfb ltb"
@@ -382,10 +384,10 @@
                     </li>
 
                     <!-- SLIDE 3 -->
-                    <li data-transition="fade" class="slide" data-title='Stop wishing. Start doing.'>
+                    <li data-transition="fade" class="slide" data-title='{{searchResultsData[2].title_english}}'>
 
                         <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                        <img class="rev-slidebg" alt='' src="./static/images/slides/next-slide.jpg">
+                        <img class="rev-slidebg" alt='' src="{{searchResultsData[2].background_image_original}}">
                         <div class="tp-caption slide__name slide__name--smaller slide__name--specific"
                           data-x="center"
                           data-y="160"
@@ -404,7 +406,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                            Stop <span class="highlight">wishing.</span> Start <span class="highlight">doing.</span>
+                            <span class="highlight">{{searchResultsData[2].title_english}}</span> 
                         </div>
 
                         <div class="tp-caption slide__descript"
@@ -425,7 +427,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                            find your best match movie with A.MOVIE
+                            {{searchResultsData[2].genres[0]}}
                         </div>
 
                         <div class="tp-caption slider-wrap-btn"

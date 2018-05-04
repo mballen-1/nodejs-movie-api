@@ -1,5 +1,6 @@
 var express = require('express');
 var nunjucks = require('nunjucks');
+const apis = require('./endpoints');
 
 var app = express();
 console.log("dirname: "+__dirname);
@@ -40,9 +41,15 @@ app.get('/movie-page-full.html', function(req, res) {
 
 //index route
 app.get('/index.html', function(req, res) {
-    res.render('layout.html', {
-        page: 'home',
-        port: app.get('port')
+    apis.getCurrentMoviesDefault(function(response){
+        searchResultsData = response.data.data.movies
+        randomNumber = Math.floor(Math.random()*20),
+        res.render('layout.html', {
+            page: 'home',
+            port: app.get('port'),
+            searchResultsData: searchResultsData,
+            randomNumber: randomNumber
+        });
     });
 });
 

@@ -22,7 +22,7 @@
   "_resolved": "https://registry.npmjs.org/express-nunjucks-boilerplate/-/express-nunjucks-boilerplate-0.0.1.tgz",
   "_shasum": "7ded137632fab1afd82db473a3fd9e04d661db30",
   "_spec": "express-nunjucks-boilerplate",
-  "_where": "C:\\Users\\mballen\\Documents\\Repositorios\\Internship\\Front-challenges\\nodejs-movie-challenge\\nodejs-movie-api",
+  "_where": "C:\\Users\\mballen\\Documents\\Repositorios\\Internship\\Front-challenges\\nodejs-practice",
   "author": {
     "name": "@iamstuartwilson"
   },
@@ -31,6 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
+    "axios": "^0.18.0",
     "express": "^4.12.4",
     "nunjucks": "^1.3.4"
   },
