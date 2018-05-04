@@ -30,6 +30,15 @@ app.get('/example', function(req, res) {
     });
 });
 
+// Other example
+app.get('/movie-page-full.html', function(req, res) {
+    res.render('movie-page-full.html', {
+        page: 'movie-details',
+        port: app.get('port')
+    });
+});
+
+
 // Kick start our server
 app.listen(app.get('port'), function() {
     console.log('Server started on port', app.get('port'));
