@@ -38,6 +38,15 @@ app.get('/movie-page-full.html', function(req, res) {
     });
 });
 
+//index route
+app.get('/index.html', function(req, res) {
+    res.render('layout.html', {
+        page: 'home',
+        port: app.get('port')
+    });
+});
+
+
 
 // Kick start our server
 app.listen(app.get('port'), function() {

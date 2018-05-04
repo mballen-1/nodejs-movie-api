@@ -1079,7 +1079,7 @@ function init_MoviePage () {
     $('.score').raty({
         width:130, 
         score: 5,
-        path: 'images/rate/',
+        path: 'static/images/rate/',
         starOff : 'star-off.svg',
         starOn  : 'star-on.svg' 
     });
