@@ -1,11 +1,10 @@
 const axios = require('axios');
+const app = require('./app');
+
 
 module.exports = {
-    
-    q_term:'',
 
     getMoviesByQueryTerm(term, cb){
-        q_term = term,
         axios.get('https://yts.am/api/v2/list_movies.json?query_term'+ term + '&sort_by=year').then(function(response){
             cb(response);
         })
@@ -30,7 +29,19 @@ module.exports = {
         .catch(function (error){
             console.log(error);
         });
+    },
 
-    }
+    getMovieById(id, callback){
+        console.log("id->"+ id);
+        axios.get('https://yts.am/api/v2/movie_details.json?movie_'+id).then(function(response){
+            callback(response);
+        })
+        .catch(function (error){
+            console.log(error);
+        });
+    },
+
+
+
 
 };

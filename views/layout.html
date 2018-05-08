@@ -430,7 +430,17 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                            {{searchResultsData[2].genres[0]}}
+                             {% for i in range(0, searchResultsData[2].genres.length) %}                                    
+                                                {% if i== searchResultsData[2].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:azure;">
+                                                        {{searchResultsData[2].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:azure;">
+                                                            {{searchResultsData[2].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                            {% endfor %}
                         </div>
 
                         <div class="tp-caption slider-wrap-btn"
@@ -477,11 +487,20 @@
                              <li><span class="best-voted">{{searchResultsData[3].title_english}}</span></li>
                              <li>
                                 <p class="movie__time">{{searchResultsData[3].runtime}} mins</p>
-                                <p>{{searchResultsData[3].genres}}</p>
-                                <p>{{searchResultsData[3].mpa_rating}}</p>
+                                {% for i in range(0, searchResultsData[3].genres.length) %}                                    
+                                                {% if i== searchResultsData[3].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                        {{searchResultsData[3].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                            {{searchResultsData[3].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                            {% endfor %}
                              </li>
                              <li class="last-block">
-                                 <a href="movie-page-full.html?query_term={{searchResultsData[3].title_english}}" class="slide__link">more</a>
+                                 <a href="/id={{searchResultsData[3].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -493,11 +512,21 @@
                              <li><span class="best-voted">{{searchResultsData[4].title_english}}</span></li>
                              <li>
                                 <p class="movie__time">{{searchResultsData[4].runtime}} min</p>
-                                <p>{{searchResultsData[4].genres}}</p>
+                                {% for i in range(0, searchResultsData[4].genres.length) %}                                    
+                                                {% if i== searchResultsData[4].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                        {{searchResultsData[4].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                            {{searchResultsData[4].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                            {% endfor %}
                                 <p>{{searchResultsData[4].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="movie-page-full.html?query_term={{searchResultsData[4].title_english}}" class="slide__link">more</a>
+                                 <a href="/id={{searchResultsData[4].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -509,11 +538,21 @@
                              <li><span class="best-voted">{{searchResultsData[5].title_english}}</span></li>
                              <li>
                                 <p class="movie__time">{{searchResultsData[5].runtime}} min</p>
-                                <p>{{searchResultsData[5].genres}}</p>
+                                {% for i in range(0, searchResultsData[5].genres.length) %}                                    
+                                                {% if i== searchResultsData[5].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                        {{searchResultsData[5].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                            {{searchResultsData[5].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                            {% endfor %}
                                 <p>{{searchResultsData[5].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="movie-page-full.html?query_term={{searchResultsData[5].title_english}}" class="slide__link">more</a>
+                                 <a href="/id={{searchResultsData[5].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -525,11 +564,21 @@
                              <li><span class="best-voted">{{searchResultsData[6].title_english}}</span></li>
                              <li>
                                 <p class="movie__time">{{searchResultsData[6].runtime}} min</p>
-                                <p>{{searchResultsData[5].genres}}</p>
-                                <p>xd{{searchResultsData[5].mpa_rating}}</p>
+                                {% for i in range(0, searchResultsData[6].genres.length) %}                                    
+                                                {% if i== searchResultsData[6].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                        {{searchResultsData[6].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                            {{searchResultsData[6].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                            {% endfor %}
+                                <p>{{searchResultsData[6].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="movie-page-full.html?query_term={{searchResultsData[6].title_english}}" class="slide__link">more</a>
+                                 <a href="/id={{searchResultsData[6].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -541,11 +590,20 @@
                              <li><span class="best-voted">{{searchResultsData[7].title_english}}</span></li>
                              <li>
                                 <p class="movie__time">{{searchResultsData[7].runtime}} min</p>
-                                <p>{{searchResultsData[7].genres}}</p>
-                                <p>{{searchResultsData[7].mpa_rating}}</p>
+                                {% for i in range(0, searchResultsData[7].genres.length) %}                                    
+                                                {% if i== searchResultsData[7].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                        {{searchResultsData[7].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                            {{searchResultsData[7].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                                {% endfor %}
                              </li>
                              <li class="last-block">
-                                 <a href="movie-page-full.html?query_term={{searchResultsData[7].title_english}}" class="slide__link">more</a>
+                                 <a href="/id={{searchResultsData[7].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -557,11 +615,21 @@
                              <li><span class="best-voted">{{searchResultsData[8].title_english}}</span></li>
                              <li>
                                 <p class="movie__time">{{searchResultsData[8].runtime}} min</p>
-                                <p>{{searchResultsData[8].genres}} </p>
+                                {% for i in range(0, searchResultsData[8].genres.length) %}                                    
+                                                {% if i== searchResultsData[8].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                        {{searchResultsData[8].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:#D3D3D3;">
+                                                            {{searchResultsData[8].genres[i]}},
+                                                        </a> 
+                                                {% endif %}         
+                            {% endfor %}
                                 <p>{{searchResultsData[8].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="movie-page-full.html?query_term={{searchResultsData[8].title_english}}" class="slide__link">more</a>
+                                 <a href="/id={{searchResultsData[8].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -602,18 +670,28 @@
                         <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--left">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[9].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[9].id}}" class="movie-beta__link">
                                         <img alt='' src="{{searchResultsData[9].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[9].title_english}}' class="movie__title">{{searchResultsData[9].title_english}}</a>
+                                    <a href='/id={{searchResultsData[9].id}}' class="movie__title">{{searchResultsData[9].title_english}}</a>
 
-                                    <p class="movie__time">91 min</p>
+                                    <p class="movie__time">{{searchResultsData[9].runtime}}</p>
 
-                                    <p class="movie__option"><a href="#">Sci-Fi</a> | <a href="#">Thriller</a> | <a href="#">Drama</a></p>
-
+                                    <p class="movie__option">
+                                            {% for i in range(0, searchResultsData[9].genres.length) %}                                    
+                                                {% if i== searchResultsData[9].genres.length - 1%}                                                    
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[9].genres[i]}}
+                                                    </a> 
+                                                    {% else %}                                           
+                                                        <a style="display:inline; font-size:13px; color:black;">
+                                                            {{searchResultsData[9].genres[i]}} |
+                                                        </a> 
+                                                {% endif %}         
+                                            {% endfor %}
                                     <div class="movie__rate">
                                         <div class="score"></div>
                                         <span class="movie__rating">{{searchResultsData[9].rating}}</span>
@@ -625,18 +703,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--left">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[10].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[10].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[10].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[10].title_english}}' class="movie__title">{{searchResultsData[10].title_english}} </a>
+                                    <a href='/id={{searchResultsData[10].id}}' class="movie__title">{{searchResultsData[10].title_english}} </a>
 
                                     <p class="movie__time">169 min</p>
 
-                                    <p class="movie__option"><a href="#">Adventure</a> | <a href="#">Fantasy</a> | <a href="#">Drama</a></p>
-
+                                    <p class="movie__option">
+                                        {% for i in range(0, searchResultsData[10].genres.length) %}                                    
+                                            {% if i== searchResultsData[10].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[10].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[10].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </p>
                                     <div class="movie__rate">
                                         <div class="score"></div>
                                         <span class="movie__rating">{{searchResultsData[10].rating}}</span>
@@ -648,17 +737,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--right">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[11].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[11].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[11].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[11].title_english}}' class="movie__title">{{searchResultsData[11].title_english}}</a>
+                                    <a href='/id={{searchResultsData[11].id}}' class="movie__title">{{searchResultsData[11].title_english}}</a>
 
                                     <p class="movie__time">146 min</p>
 
-                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Sci-Fi</a></p>
+                                    <p class="movie__option"><a href="#">
+                                            {% for i in range(0, searchResultsData[11].genres.length) %}                                    
+                                            {% if i== searchResultsData[11].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[11].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[11].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
@@ -671,17 +772,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--right">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[12].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[12].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[12].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[12].title_english}}' class="movie__title">{{searchResultsData[12].title_english}} </a>
+                                    <a href='/id={{searchResultsData[12].id}}' class="movie__title">{{searchResultsData[12].title_english}} </a>
 
                                     <p class="movie__time">112 min</p>
 
-                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Fantasy</a></p>
+                                    <p class="movie__option"><a href="#">
+                                            {% for i in range(0, searchResultsData[12].genres.length) %}                                    
+                                            {% if i== searchResultsData[12].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[12].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[12].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
@@ -694,17 +807,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--left">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[13].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[13].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[13].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[13].title_english}}' class="movie__title">{{searchResultsData[13].title_english}}</a>
+                                    <a href='/id={{searchResultsData[13].id}}' class="movie__title">{{searchResultsData[13].title_english}}</a>
 
                                     <p class="movie__time">116 min</p>
 
-                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Horror</a></p>
+                                    <p class="movie__option"><a href="#">
+                                            {% for i in range(0, searchResultsData[13].genres.length) %}                                    
+                                            {% if i== searchResultsData[13].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[13].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[13].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
@@ -717,17 +842,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--left">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[14].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[14].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[14].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[14].title_english}}l' class="movie__title">{{searchResultsData[14].title_english}}</a>
+                                    <a href='/id={{searchResultsData[14].id}}' class="movie__title">{{searchResultsData[14].title_english}}</a>
 
                                     <p class="movie__time">153 min</p>
 
-                                    <p class="movie__option"><a href="#">Crime</a> | <a href="#">Thriller</a> | <a href="#">Drama</a></p>
+                                    <p class="movie__option"><a href="#">
+                                            {% for i in range(0, searchResultsData[14].genres.length) %}                                    
+                                            {% if i== searchResultsData[14].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[14].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[14].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
@@ -740,17 +877,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--right">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[15].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[15].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[15].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[15].title_english}}' class="movie__title">{{searchResultsData[15].title_english}}</a>
+                                    <a href='/id={{searchResultsData[15].id}}' class="movie__title">{{searchResultsData[15].title_english}}</a>
 
                                     <p class="movie__time">107 min</p>
 
-                                    <p class="movie__option"><a href="#">Comedy</a> | <a href="#">Fantasy</a></p>
+                                    <p class="movie__option"><a href="#">
+                                            {% for i in range(0, searchResultsData[15].genres.length) %}                                    
+                                            {% if i== searchResultsData[15].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[15].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[15].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </a></p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
@@ -763,17 +912,29 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--right">
                                 <div class="movie__images">
-                                    <a href="movie-page-full.html?query_term={{searchResultsData[16].title_english}}" class="movie-beta__link">
+                                    <a href="/id={{searchResultsData[16].id}}" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[16].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html?query_term={{searchResultsData[16].title_english}}' class="movie__title">{{searchResultsData[16].title_english}}</a>
+                                    <a href='/id={{searchResultsData[16].id}}' class="movie__title">{{searchResultsData[16].title_english}}</a>
 
                                     <p class="movie__time">112 min</p>
 
-                                    <p class="movie__option"><a href="#">Comedy</a></p>
+                                    <p class="movie__option"><a href="#">
+                                            {% for i in range(0, searchResultsData[16].genres.length) %}                                    
+                                            {% if i== searchResultsData[16].genres.length - 1%}                                                    
+                                                <a style="display:inline; font-size:13px; color:black;">
+                                                    {{searchResultsData[16].genres[i]}}
+                                                </a> 
+                                                {% else %}                                           
+                                                    <a style="display:inline; font-size:13px; color:black;">
+                                                        {{searchResultsData[16].genres[i]}} |
+                                                    </a> 
+                                            {% endif %}         
+                                        {% endfor %}
+                                    </a></p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>

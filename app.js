@@ -16,8 +16,6 @@ nunjucks.configure('views', {
 
 app.set('port', process.env.PORT || 3000);
 
-
-
 // Other example
 app.get('/example', function(req, res) {
     res.render('example.html', {
@@ -27,12 +25,13 @@ app.get('/example', function(req, res) {
 });
 
 // Other example
-app.get('/movie-page-full.html', function(req, res) {
-    var v1 = apis.q_term;
-    apis.getMoviesByQueryTerm( v1, function(response){
-        searchResultsData = response.data.data.movies
+app.get('/:id', function(req, res) {
+    apis.getMovieById( req.params.id, function(response){
+        //console.log(response.data),
+        searchResultsData = response.data.data.movie
+        console.log("TITLE ->" +searchResultsData.title_english)
         res.render('movie-page-full.html', {
-            page: 'movie-details',
+            page: 'movie-page-full',
             port: app.get('port'),
             searchResultsData : searchResultsData,
         });
@@ -41,7 +40,6 @@ app.get('/movie-page-full.html', function(req, res) {
 
 //index route
 app.get('/', function(req, res) {
-    console.log("entre a index")
     apis.getCurrentMoviesDefault(function(response){
         searchResultsData = response.data.data.movies
         randomNumber = Math.floor(Math.random()*20),
@@ -79,29 +77,13 @@ app.listen(app.get('port'), function() {
 //result route by search term and limit
 app.get('/result', function(request, res) {
     apis.getMoviesByQueryTermAndLimit(request.query.search_input, request.query.limit_value, function(response){
-        console.log("entre")
         searchResultsData = response.data.data.movies
-        res.render('result.html', {
-            page: 'result',
+        res.render('example.html', {
+            page: 'example',
             port: app.get('port'),
             term: request.query.search_input,
             searchResultsData: searchResultsData
         });
     })   
 });
-
-var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = decodeURIComponent(global.location.search.substring(1)),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
-
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
-
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : sParameterName[1];
-        }
-    }
-};
 
