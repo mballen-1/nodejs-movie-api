@@ -470,15 +470,15 @@
                  <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Today Best choice</div>
                  <div class="col-sm-12 change--col">
                      <div class="movie-beta__item ">
-                        <img alt='' src="./static/images/movie/movie-sample1.jpg">
-                         <span class="best-rate">5.0</span>
+                        <img alt='' src="{{searchResultsData[3].medium_cover_image}}">
+                         <span class="best-rate">{{searchResultsData[3].rating}}</span>
 
                          <ul class="movie-beta__info">
                              <li><span class="best-voted">71 people voted today</span></li>
                              <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                <p class="movie__time">{{searchResultsData[3].runtime}} min</p>
+                                <p>{{searchResultsData[3].genres}}</p>
+                                <p>MPA rating: {{searchResultsData[3].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.hml" class="slide__link">more</a>
@@ -486,7 +486,7 @@
                          </ul>
                      </div>
                      <div class="movie-beta__item second--item">
-                         <img alt='' src="./static/images/movie/movie-sample2.jpg">
+                         <img alt='' src="{{searchResultsData[4].medium_cover_image}}">
                          <span class="best-rate">5.0</span>
 
                          <ul class="movie-beta__info">
@@ -502,7 +502,7 @@
                          </ul>
                      </div>
                      <div class="movie-beta__item third--item">
-                         <img alt='' src="./static/images/movie/movie-sample3.jpg">
+                         <img alt='' src="{{searchResultsData[5].medium_cover_image}}">
                          <span class="best-rate">5.0</span>
 
                          <ul class="movie-beta__info">
@@ -518,7 +518,7 @@
                          </ul>
                      </div>
                      <div class="movie-beta__item hidden-xs">
-                         <img alt='' src="./static/images/movie/movie-sample4.jpg">
+                         <img alt='' src="{{searchResultsData[6].medium_cover_image}}">
                          <span class="best-rate">5.0</span>
 
                          <ul class="movie-beta__info">
@@ -534,7 +534,7 @@
                          </ul>
                      </div>
                      <div class="movie-beta__item hidden-xs hidden-sm">
-                         <img alt='' src="./static/images/movie/movie-sample5.jpg">
+                         <img alt='' src="{{searchResultsData[7].medium_cover_image}}">
                          <span class="best-rate">5.0</span>
 
                          <ul class="movie-beta__info">
@@ -550,7 +550,7 @@
                          </ul>
                      </div>
                      <div class="movie-beta__item hidden-xs hidden-sm">
-                         <img alt='' src="./static/images/movie/movie-sample6.jpg">
+                         <img alt='' src="{{searchResultsData[8].medium_cover_image}}">
                          <span class="best-rate">5.0</span>
 
                          <ul class="movie-beta__info">
