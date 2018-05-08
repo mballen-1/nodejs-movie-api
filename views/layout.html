@@ -51,7 +51,7 @@
         <header class="header-wrapper header-wrapper--home">
             <div class="container">
                 <!-- Logo link-->
-                <a href='index.html' class="logo">
+                <a href='layout.html' class="logo">
                     <img alt='logo' src="./static/images/logo.png">
                 </a>
 
@@ -86,7 +86,7 @@
                     <li data-transition="fade" class="slide" data-title='{{searchResultsData[0].english_title}}'>
 
                         <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                        <img class="rev-slidebg" alt='' src="{{searchResultsData[randomNumber].background_image_original}}">
+                        <img class="rev-slidebg" alt='' src="{{searchResultsData[0].background_image_original}}">
 
                         <div class="tp-caption slide__name margin-slider"
                              data-x="right"
@@ -108,7 +108,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                            {{searchResultsData[randomNumber].title_english}}
+                            {{searchResultsData[0].title_english}}
                         </div>
 
                         <div class="tp-caption n slide__time margin-slider"
@@ -210,7 +210,7 @@
                                "to":"opacity:0;",
                                "ease":"Power3.easeInOut"
                              }]'>
-                             {{searchResultsData[randomNumber].summary}}
+                             {{searchResultsData[0].summary}}
                         </div>
                         <div class="tp-caption margin-slider"
                              data-x="right"
@@ -471,14 +471,14 @@
                  <div class="col-sm-12 change--col">
                      <div class="movie-beta__item ">
                         <img alt='' src="{{searchResultsData[3].medium_cover_image}}">
-                         <span class="best-rate">{{searchResultsData[3].rating}}</span>
+                         <span class="best-rate">{{searchResultsData[3].rating}}/10</span>
 
                          <ul class="movie-beta__info">
-                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li><span class="best-voted">{{searchResultsData[3].title_english}}</span></li>
                              <li>
-                                <p class="movie__time">{{searchResultsData[3].runtime}} min</p>
+                                <p class="movie__time">{{searchResultsData[3].runtime}} mins</p>
                                 <p>{{searchResultsData[3].genres}}</p>
-                                <p>MPA rating: {{searchResultsData[3].mpa_rating}}</p>
+                                <p>{{searchResultsData[3].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.hml" class="slide__link">more</a>
@@ -487,14 +487,14 @@
                      </div>
                      <div class="movie-beta__item second--item">
                          <img alt='' src="{{searchResultsData[4].medium_cover_image}}">
-                         <span class="best-rate">5.0</span>
+                         <span class="best-rate">{{searchResultsData[4].rating}}/10</span>
 
                          <ul class="movie-beta__info">
-                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li><span class="best-voted">{{searchResultsData[4].title_english}}</span></li>
                              <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                <p class="movie__time">{{searchResultsData[4].runtime}} min</p>
+                                <p>{{searchResultsData[4].genres}}</p>
+                                <p>{{searchResultsData[4].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.html" class="slide__link">more</a>
@@ -503,14 +503,14 @@
                      </div>
                      <div class="movie-beta__item third--item">
                          <img alt='' src="{{searchResultsData[5].medium_cover_image}}">
-                         <span class="best-rate">5.0</span>
+                         <span class="best-rate">{{searchResultsData[5].rating}}/10</span>
 
                          <ul class="movie-beta__info">
-                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li><span class="best-voted">{{searchResultsData[5].title_english}}</span></li>
                              <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                <p class="movie__time">{{searchResultsData[5].runtime}} min</p>
+                                <p>{{searchResultsData[5].genres}}</p>
+                                <p>{{searchResultsData[5].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.html" class="slide__link">more</a>
@@ -519,14 +519,14 @@
                      </div>
                      <div class="movie-beta__item hidden-xs">
                          <img alt='' src="{{searchResultsData[6].medium_cover_image}}">
-                         <span class="best-rate">5.0</span>
+                         <span class="best-rate">{{searchResultsData[6].rating}}/10</span>
 
                          <ul class="movie-beta__info">
-                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li><span class="best-voted">{{searchResultsData[6].title_english}}</span></li>
                              <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                <p class="movie__time">{{searchResultsData[6].runtime}} min</p>
+                                <p>{{searchResultsData[5].genres}}</p>
+                                <p>xd{{searchResultsData[5].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.html" class="slide__link">more</a>
@@ -535,14 +535,14 @@
                      </div>
                      <div class="movie-beta__item hidden-xs hidden-sm">
                          <img alt='' src="{{searchResultsData[7].medium_cover_image}}">
-                         <span class="best-rate">5.0</span>
+                         <span class="best-rate">{{searchResultsData[7].rating}}/10</span>
 
                          <ul class="movie-beta__info">
-                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li><span class="best-voted">{{searchResultsData[7].title_english}}</span></li>
                              <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                <p class="movie__time">{{searchResultsData[7].runtime}} min</p>
+                                <p>{{searchResultsData[7].genres}}</p>
+                                <p>{{searchResultsData[7].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.html" class="slide__link">more</a>
@@ -551,14 +551,14 @@
                      </div>
                      <div class="movie-beta__item hidden-xs hidden-sm">
                          <img alt='' src="{{searchResultsData[8].medium_cover_image}}">
-                         <span class="best-rate">5.0</span>
+                         <span class="best-rate">{{searchResultsData[8].rating}}/10</span>
 
                          <ul class="movie-beta__info">
-                             <li><span class="best-voted">71 people voted today</span></li>
+                             <li><span class="best-voted">{{searchResultsData[8].title_english}}</span></li>
                              <li>
-                                <p class="movie__time">169 min</p>
-                                <p>Adventure | Drama | Fantasy </p>
-                                <p>38 comments</p>
+                                <p class="movie__time">{{searchResultsData[8].runtime}} min</p>
+                                <p>{{searchResultsData[8].genres}} </p>
+                                <p>{{searchResultsData[8].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
                                  <a href="movie-page-full.html" class="slide__link">more</a>
@@ -603,12 +603,12 @@
                             <div class="movie movie--test movie--test--dark movie--test--left">
                                 <div class="movie__images">
                                     <a href="movie-page-full.html" class="movie-beta__link">
-                                        <img alt='' src="{{searchResultsData[7].medium_cover_image}}">
+                                        <img alt='' src="{{searchResultsData[9].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[7].title_english}}</a>
+                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[9].title_english}}</a>
 
                                     <p class="movie__time">91 min</p>
 
@@ -616,7 +616,7 @@
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
-                                        <span class="movie__rating">4.1</span>
+                                        <span class="movie__rating">{{searchResultsData[9].rating}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -624,52 +624,6 @@
 
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--left">
-                                <div class="movie__images">
-                                    <a href="movie-page-full.html" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[8].medium_cover_image}}">
-                                    </a>
-                                </div>
-
-                                <div class="movie__info">
-                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[8].title_english}} </a>
-
-                                    <p class="movie__time">169 min</p>
-
-                                    <p class="movie__option"><a href="#">Adventure</a> | <a href="#">Fantasy</a> | <a href="#">Drama</a></p>
-
-                                    <div class="movie__rate">
-                                        <div class="score"></div>
-                                        <span class="movie__rating">5.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                         <!-- Movie variant with time -->
-
-                         <!-- Movie variant with time -->
-                            <div class="movie movie--test movie--test--light movie--test--right">
-                                <div class="movie__images">
-                                    <a href="movie-page-full.html" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[9].medium_cover_image}}">
-                                    </a>
-                                </div>
-
-                                <div class="movie__info">
-                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[9].title_english}}</a>
-
-                                    <p class="movie__time">146 min</p>
-
-                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Sci-Fi</a></p>
-
-                                    <div class="movie__rate">
-                                        <div class="score"></div>
-                                        <span class="movie__rating">4.9</span>
-                                    </div>
-                                </div>
-                            </div>
-                         <!-- Movie variant with time -->
-
-                         <!-- Movie variant with time -->
-                            <div class="movie movie--test movie--test--dark movie--test--right">
                                 <div class="movie__images">
                                     <a href="movie-page-full.html" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[10].medium_cover_image}}">
@@ -679,59 +633,13 @@
                                 <div class="movie__info">
                                     <a href='movie-page-full.html' class="movie__title">{{searchResultsData[10].title_english}} </a>
 
-                                    <p class="movie__time">112 min</p>
+                                    <p class="movie__time">169 min</p>
 
-                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Fantasy</a></p>
-
-                                    <div class="movie__rate">
-                                        <div class="score"></div>
-                                        <span class="movie__rating">5.0</span>
-                                    </div>
-                                </div>
-                            </div>
-                         <!-- Movie variant with time -->
-
-                         <!-- Movie variant with time -->
-                            <div class="movie movie--test movie--test--dark movie--test--left">
-                                <div class="movie__images">
-                                    <a href="movie-page-full.html" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[11].medium_cover_image}}">
-                                    </a>
-                                </div>
-
-                                <div class="movie__info">
-                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[11].title_english}}</a>
-
-                                    <p class="movie__time">116 min</p>
-
-                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Horror</a></p>
+                                    <p class="movie__option"><a href="#">Adventure</a> | <a href="#">Fantasy</a> | <a href="#">Drama</a></p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
-                                        <span class="movie__rating">4.1</span>
-                                    </div>
-                                </div>
-                            </div>
-                         <!-- Movie variant with time -->
-
-                         <!-- Movie variant with time -->
-                            <div class="movie movie--test movie--test--light movie--test--left">
-                                <div class="movie__images">
-                                    <a href="movie-page-full.html" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[12].medium_cover_image}}">
-                                    </a>
-                                </div>
-
-                                <div class="movie__info">
-                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[12].title_english}}</a>
-
-                                    <p class="movie__time">153 min</p>
-
-                                    <p class="movie__option"><a href="#">Crime</a> | <a href="#">Thriller</a> | <a href="#">Drama</a></p>
-
-                                    <div class="movie__rate">
-                                        <div class="score"></div>
-                                        <span class="movie__rating">5.0</span>
+                                        <span class="movie__rating">{{searchResultsData[10].rating}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -741,20 +649,20 @@
                             <div class="movie movie--test movie--test--light movie--test--right">
                                 <div class="movie__images">
                                     <a href="movie-page-full.html" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[13].medium_cover_image}}">
+                                    <img alt='' src="{{searchResultsData[11].medium_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[13].title_english}}</a>
+                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[11].title_english}}</a>
 
-                                    <p class="movie__time">107 min</p>
+                                    <p class="movie__time">146 min</p>
 
-                                    <p class="movie__option"><a href="#">Comedy</a> | <a href="#">Fantasy</a></p>
+                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Sci-Fi</a></p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
-                                        <span class="movie__rating">4.9</span>
+                                        <span class="movie__rating">{{searchResultsData[11].rating}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -764,6 +672,52 @@
                             <div class="movie movie--test movie--test--dark movie--test--right">
                                 <div class="movie__images">
                                     <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[12].medium_cover_image}}">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[12].title_english}} </a>
+
+                                    <p class="movie__time">112 min</p>
+
+                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Fantasy</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">{{searchResultsData[12].rating}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--dark movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[13].medium_cover_image}}">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[13].title_english}}</a>
+
+                                    <p class="movie__time">116 min</p>
+
+                                    <p class="movie__option"><a href="#">Action</a> | <a href="#">Adventure</a> | <a href="#">Horror</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">{{searchResultsData[13].rating}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--light movie--test--left">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
                                     <img alt='' src="{{searchResultsData[14].medium_cover_image}}">
                                     </a>
                                 </div>
@@ -771,13 +725,59 @@
                                 <div class="movie__info">
                                     <a href='movie-page-full.html' class="movie__title">{{searchResultsData[14].title_english}}</a>
 
+                                    <p class="movie__time">153 min</p>
+
+                                    <p class="movie__option"><a href="#">Crime</a> | <a href="#">Thriller</a> | <a href="#">Drama</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">{{searchResultsData[14].rating}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--light movie--test--right">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[15].medium_cover_image}}">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[15].title_english}}</a>
+
+                                    <p class="movie__time">107 min</p>
+
+                                    <p class="movie__option"><a href="#">Comedy</a> | <a href="#">Fantasy</a></p>
+
+                                    <div class="movie__rate">
+                                        <div class="score"></div>
+                                        <span class="movie__rating">{{searchResultsData[15].rating}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                         <!-- Movie variant with time -->
+
+                         <!-- Movie variant with time -->
+                            <div class="movie movie--test movie--test--dark movie--test--right">
+                                <div class="movie__images">
+                                    <a href="movie-page-full.html" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[16].medium_cover_image}}">
+                                    </a>
+                                </div>
+
+                                <div class="movie__info">
+                                    <a href='movie-page-full.html' class="movie__title">{{searchResultsData[16].title_english}}</a>
+
                                     <p class="movie__time">112 min</p>
 
                                     <p class="movie__option"><a href="#">Comedy</a></p>
 
                                     <div class="movie__rate">
                                         <div class="score"></div>
-                                        <span class="movie__rating">5.0</span>
+                                        <span class="movie__rating">{{searchResultsData[16].rating}}</span>
                                     </div>
                                 </div>
                             </div>

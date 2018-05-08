@@ -27,10 +27,14 @@ app.get('/example', function(req, res) {
 
 // Other example
 app.get('/movie-page-full.html', function(req, res) {
-    res.render('movie-page-full.html', {
-        page: 'movie-details',
-        port: app.get('port')
-    });
+    apis.getCurrentMoviesDefault(function(response){
+        searchResultsData = response.data.data.movies
+        randomNumber = Math.floor(Math.random()*20),
+        res.render('movie-page-full.html', {
+            page: 'movie-details',
+            port: app.get('port')
+        });
+    });    
 });
 
 //index route
@@ -38,6 +42,10 @@ app.get('/', function(req, res) {
     console.log("entre a index")
     apis.getCurrentMoviesDefault(function(response){
         searchResultsData = response.data.data.movies
+        let bestMovies;
+        for(let x = 0; x< searchResultsData.length; ++x){
+            
+        }
         randomNumber = Math.floor(Math.random()*20),
         res.render('layout.html', {
             page: 'home',

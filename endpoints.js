@@ -21,7 +21,7 @@ module.exports = {
     },
 
     getCurrentMoviesDefault(callback){
-        axios.get('https://yts.am/api/v2/list_movies.json').then(function(response){
+        axios.get('https://yts.am/api/v2/list_movies.json?minimum_rating=8.6').then(function(response){
             callback(response);
         })
         .catch(function (error){
