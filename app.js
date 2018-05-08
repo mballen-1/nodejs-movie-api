@@ -1,5 +1,6 @@
 var express = require('express');
 var nunjucks = require('nunjucks');
+const apis = require('./endpoints');
 
 var app = express();
 console.log("dirname: "+__dirname);
@@ -14,13 +15,7 @@ nunjucks.configure('views', {
 
 app.set('port', process.env.PORT || 3000);
 
-// Home page
-app.get('/', function(req, res) {
-    res.render('layout.html', {
-        page: 'home',
-        port: app.get('port')
-    });
-});
+
 
 // Other example
 app.get('/example', function(req, res) {
@@ -29,6 +24,31 @@ app.get('/example', function(req, res) {
         port: app.get('port')
     });
 });
+
+// Other example
+app.get('/movie-page-full.html', function(req, res) {
+    res.render('movie-page-full.html', {
+        page: 'movie-details',
+        port: app.get('port')
+    });
+});
+
+//index route
+app.get('/', function(req, res) {
+    console.log("entre a index")
+    apis.getCurrentMoviesDefault(function(response){
+        searchResultsData = response.data.data.movies
+        randomNumber = Math.floor(Math.random()*20),
+        res.render('layout.html', {
+            page: 'home',
+            port: app.get('port'),
+            searchResultsData: searchResultsData,
+            randomNumber: randomNumber
+        });
+    });
+});
+
+
 
 // Kick start our server
 app.listen(app.get('port'), function() {
@@ -39,6 +59,7 @@ app.listen(app.get('port'), function() {
 //result route by search term and limit
 app.get('/result', function(request, res) {
     apis.getMoviesByQueryTermAndLimit(request.query.search_input, request.query.limit_value, function(response){
+        console.log("entre")
         searchResultsData = response.data.data.movies
         res.render('result.html', {
             page: 'result',
