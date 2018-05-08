@@ -2,7 +2,10 @@ const axios = require('axios');
 
 module.exports = {
     
+    q_term:'',
+
     getMoviesByQueryTerm(term, cb){
+        q_term = term,
         axios.get('https://yts.am/api/v2/list_movies.json?query_term'+ term + '&sort_by=year').then(function(response){
             cb(response);
         })
