@@ -23,20 +23,20 @@
         <link href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type='text/css'>
 
         <!-- Mobile menu -->
-        <link href="./static/css/gozha-nav.css" rel="stylesheet" type='text/css'/>
+        <link href="/static/css/gozha-nav.css" rel="stylesheet" type='text/css'/>
         <!-- Select -->
-        <link href="./static/css/external/jquery.selectbox.css" rel="stylesheet" type='text/css'  />
+        <link href="/static/css/external/jquery.selectbox.css" rel="stylesheet" type='text/css'  />
         <!-- Swiper slider -->
-        <link href="./static/css/external/idangerous.swiper.css" rel="stylesheet" type='text/css'/>
+        <link href="/static/css/external/idangerous.swiper.css" rel="stylesheet" type='text/css'/>
         <!-- Magnific-popup -->
-        <link href="./static/css/external/magnific-popup.css" rel="stylesheet" type='text/css'/>
+        <link href="/static/css/external/magnific-popup.css" rel="stylesheet" type='text/css'/>
 
 
         <!-- Custom -->
-        <link href="./static/css/style.css?v=1" rel="stylesheet" type='text/css' />
+        <link href="/static/css/style.css?v=1" rel="stylesheet" type='text/css' />
 
         <!-- Modernizr -->
-        <script src="./static/js/external/modernizr.custom.js"></script>
+        <script src="/static/js/external/modernizr.custom.js"></script>
 
 
 </head>
@@ -53,7 +53,7 @@
             <div class="container">
                 <!-- Logo link-->
                 <a href='/' class="logo">
-                    <img alt='logo' src="./static/images/logo.png">
+                    <img alt='logo' src="/static/images/logo.png">
                 </a>
 
                 <!-- Main website navigation-->
@@ -80,12 +80,11 @@
         <!-- Search bar -->
         <div class="search-wrapper">
             <div class="container container--add">
-                <form id='search-form' method='get' class="search">
-                    <input type="text" class="search__field" placeholder="Search">
-                    <select name="sorting_item" id="search-sort" class="search__sort" tabindex="0">
-                        <option value="1" selected='selected'>By title</option>
-                        <option value="2">By year</option>
-                        <option value="3">By producer</option>
+                <form id='search-form' method='get' class="search" action="/by_term">
+                    <input type="text" class="search__field" placeholder="Search" name="query_term">
+                    <select name="sort_by" id="search-sort" class="search__sort" tabindex="0">
+                        <option value="year" selected='selected'>By title</option>
+                        <option value="year">By year</option>
                     </select>
                     <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
                 </form>

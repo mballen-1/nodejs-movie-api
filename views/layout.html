@@ -23,21 +23,21 @@
     <!-- Stylesheets -->
 
         <!-- Mobile menu -->
-        <link href="./static/css/gozha-nav.css" rel="stylesheet" type='text/css' />
+        <link href="/static/css/gozha-nav.css" rel="stylesheet" type='text/css' />
         <!-- Select -->
-        <link href="./static/css/external/jquery.selectbox.css" rel="stylesheet" type='text/css' />
+        <link href="/static/css/external/jquery.selectbox.css" rel="stylesheet" type='text/css' />
 
         <!-- Slider Revolution CSS Files -->
-        <link rel="stylesheet" type='text/css' href="./static/revolution/css/settings.css">
-        <link rel="stylesheet" type='text/css' href="./static/revolution/css/layers.css">
-        <link rel="stylesheet" type='text/css' href="./static/revolution/css/navigation.css"> -->
+        <link rel="stylesheet" type='text/css' href="/static/revolution/css/settings.css">
+        <link rel="stylesheet" type='text/css' href="/static/revolution/css/layers.css">
+        <link rel="stylesheet" type='text/css' href="/static/revolution/css/navigation.css"> -->
 
         <!-- Custom -->
-        <link href="./static/css/style.css?v=1" rel="stylesheet" type='text/css' />
+        <link href="/static/css/style.css?v=1" rel="stylesheet" type='text/css' />
 
 
         <!-- Modernizr -->
-        <script src="./static/js/external/modernizr.custom.js"></script>
+        <script src="/static/js/external/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -52,13 +52,13 @@
             <div class="container">
                 <!-- Logo link-->
                 <a href='/' class="logo">
-                    <img alt='logo' src="./static/images/logo.png">
+                    <img alt='logo' src="/static/images/logo.png">
                 </a>
 
                 <!-- Main website navigation-->
-                <nav id="navigation-box">
+                <nav "navigation-box">
                     <!-- Toggle for mobile menu mode -->
-                    <a href="#" id="navigation-toggle">
+                    <a href="#" "navigation-toggle">
                         <span class="menu-icon">
                             <span class="icon-toggle" role="button" aria-label="Toggle Navigation">
                               <span class="lines"></span>
@@ -67,7 +67,7 @@
                     </a>
 
                     <!-- Link navigation -->
-                    <ul id="navigation">
+                    <ul "navigation">
 
                     </ul>
                 </nav>
@@ -78,7 +78,7 @@
         <div class="bannercontainer rev_slider_wrapper">
 
             <!-- the ID here will be used in the JavaScript below to initialize the slider -->
-            <div id="rev_slider_1" class="banner rev_slider" style="display:none">
+            <div "rev_slider_1" class="banner rev_slider" style="display:none">
 
                 <!-- BEGIN SLIDES LIST -->
                 <ul>
@@ -480,7 +480,7 @@
                  <div class="col-sm-10 col-sm-offset-1 movie-best__rating">Today Best choice</div>
                  <div class="col-sm-12 change--col">
                      <div class="movie-beta__item ">
-                        <img alt='' src="{{searchResultsData[3].medium_cover_image}}">
+                        <img alt='' src="{{searchResultsData[3].large_cover_image}}">
                          <span class="best-rate">{{searchResultsData[3].rating}}/10</span>
 
                          <ul class="movie-beta__info">
@@ -500,12 +500,12 @@
                             {% endfor %}
                              </li>
                              <li class="last-block">
-                                 <a href="/id={{searchResultsData[3].id}}" class="slide__link">more</a>
+                                 <a href="/result/{{searchResultsData[3].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
                      <div class="movie-beta__item second--item">
-                         <img alt='' src="{{searchResultsData[4].medium_cover_image}}">
+                         <img alt='' src="{{searchResultsData[4].large_cover_image}}">
                          <span class="best-rate">{{searchResultsData[4].rating}}/10</span>
 
                          <ul class="movie-beta__info">
@@ -526,12 +526,12 @@
                                 <p>{{searchResultsData[4].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="/id={{searchResultsData[4].id}}" class="slide__link">more</a>
+                                 <a href="/result/{{searchResultsData[4].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
                      <div class="movie-beta__item third--item">
-                         <img alt='' src="{{searchResultsData[5].medium_cover_image}}">
+                         <img alt='' src="{{searchResultsData[5].large_cover_image}}">
                          <span class="best-rate">{{searchResultsData[5].rating}}/10</span>
 
                          <ul class="movie-beta__info">
@@ -552,12 +552,12 @@
                                 <p>{{searchResultsData[5].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="/id={{searchResultsData[5].id}}" class="slide__link">more</a>
+                                 <a href="/result/{{searchResultsData[5].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
                      <div class="movie-beta__item hidden-xs">
-                         <img alt='' src="{{searchResultsData[6].medium_cover_image}}">
+                         <img alt='' src="{{searchResultsData[6].large_cover_image}}">
                          <span class="best-rate">{{searchResultsData[6].rating}}/10</span>
 
                          <ul class="movie-beta__info">
@@ -578,12 +578,12 @@
                                 <p>{{searchResultsData[6].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="/id={{searchResultsData[6].id}}" class="slide__link">more</a>
+                                 <a href="/result/{{searchResultsData[6].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
                      <div class="movie-beta__item hidden-xs hidden-sm">
-                         <img alt='' src="{{searchResultsData[7].medium_cover_image}}">
+                         <img alt='' src="{{searchResultsData[7].large_cover_image}}">
                          <span class="best-rate">{{searchResultsData[7].rating}}/10</span>
 
                          <ul class="movie-beta__info">
@@ -603,12 +603,12 @@
                                 {% endfor %}
                              </li>
                              <li class="last-block">
-                                 <a href="/id={{searchResultsData[7].id}}" class="slide__link">more</a>
+                                 <a href="/result/{{searchResultsData[7].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
                      <div class="movie-beta__item hidden-xs hidden-sm">
-                         <img alt='' src="{{searchResultsData[8].medium_cover_image}}">
+                         <img alt='' src="{{searchResultsData[8].large_cover_image}}">
                          <span class="best-rate">{{searchResultsData[8].rating}}/10</span>
 
                          <ul class="movie-beta__info">
@@ -629,7 +629,7 @@
                                 <p>{{searchResultsData[8].mpa_rating}}</p>
                              </li>
                              <li class="last-block">
-                                 <a href="/id={{searchResultsData[8].id}}" class="slide__link">more</a>
+                                 <a href="/result/{{searchResultsData[8].id}}" class="slide__link">more</a>
                              </li>
                          </ul>
                      </div>
@@ -645,24 +645,20 @@
                         </div>
                     </div>
 
-                      <div class="mega-select pull-right">
-                          <span class="mega-select__point">Search by</span>
-                          <ul class="mega-select__sort">
-                              <li class="filter-wrap"><a href="#" class="mega-select__filter filter--active" data-filter='location'>Movie</a></li>
-                          </ul>
-
-                          <input name="search-input" type='text' class="select__field">
-
-                          <div class="select__btn">
-                            <a href="#" class="btn btn-md btn--danger location" href="/movie-page-full.html">find <span class="hidden-exrtasm">movies</span></a>
-                          </div>
-                      </div>
+                    <form id='search-form' method='get' class="search" action="/by_term">
+                        <input type="text" class="search__field" placeholder="Search" name="query_term">
+                        <select name="sort_by" id="search-sort" class="search__sort" tabindex="0">
+                            <option value="year" selected='selected'>By title</option>
+                            <option value="year">By year</option>
+                        </select>
+                        <button type='submit' class="btn btn-md btn--danger search__button">search a movie</button>
+                    </form>
                   </div>
             </div>
 
             <div class="clearfix"></div>
 
-            <h2 id='target' class="page-heading heading--outcontainer">Now in the cinema</h2>
+            <h2 'target' class="page-heading heading--outcontainer">Now in the cinema</h2>
 
             <div class="col-sm-12">
                 <div class="row">
@@ -670,13 +666,13 @@
                         <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--left">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[9].id}}" class="movie-beta__link">
-                                        <img alt='' src="{{searchResultsData[9].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[9].id}}" class="movie-beta__link">
+                                        <img alt='' src="{{searchResultsData[9].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[9].id}}' class="movie__title">{{searchResultsData[9].title_english}}</a>
+                                    <a href='/result/{{searchResultsData[9].id}}' class="movie__title">{{searchResultsData[9].title_english}}</a>
 
                                     <p class="movie__time">{{searchResultsData[9].runtime}}</p>
 
@@ -703,13 +699,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--left">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[10].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[10].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[10].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[10].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[10].id}}' class="movie__title">{{searchResultsData[10].title_english}} </a>
+                                    <a href='/result/{{searchResultsData[10].id}}' class="movie__title">{{searchResultsData[10].title_english}} </a>
 
                                     <p class="movie__time">169 min</p>
 
@@ -737,13 +733,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--right">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[11].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[11].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[11].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[11].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[11].id}}' class="movie__title">{{searchResultsData[11].title_english}}</a>
+                                    <a href='/result/{{searchResultsData[11].id}}' class="movie__title">{{searchResultsData[11].title_english}}</a>
 
                                     <p class="movie__time">146 min</p>
 
@@ -772,13 +768,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--right">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[12].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[12].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[12].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[12].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[12].id}}' class="movie__title">{{searchResultsData[12].title_english}} </a>
+                                    <a href='/result/{{searchResultsData[12].id}}' class="movie__title">{{searchResultsData[12].title_english}} </a>
 
                                     <p class="movie__time">112 min</p>
 
@@ -807,13 +803,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--left">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[13].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[13].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[13].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[13].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[13].id}}' class="movie__title">{{searchResultsData[13].title_english}}</a>
+                                    <a href='/result/{{searchResultsData[13].id}}' class="movie__title">{{searchResultsData[13].title_english}}</a>
 
                                     <p class="movie__time">116 min</p>
 
@@ -842,13 +838,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--left">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[14].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[14].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[14].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[14].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[14].id}}' class="movie__title">{{searchResultsData[14].title_english}}</a>
+                                    <a href='/result/{{searchResultsData[14].id}}' class="movie__title">{{searchResultsData[14].title_english}}</a>
 
                                     <p class="movie__time">153 min</p>
 
@@ -877,13 +873,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--light movie--test--right">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[15].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[15].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[15].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[15].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[15].id}}' class="movie__title">{{searchResultsData[15].title_english}}</a>
+                                    <a href='/result/{{searchResultsData[15].id}}' class="movie__title">{{searchResultsData[15].title_english}}</a>
 
                                     <p class="movie__time">107 min</p>
 
@@ -912,13 +908,13 @@
                          <!-- Movie variant with time -->
                             <div class="movie movie--test movie--test--dark movie--test--right">
                                 <div class="movie__images">
-                                    <a href="/id={{searchResultsData[16].id}}" class="movie-beta__link">
-                                    <img alt='' src="{{searchResultsData[16].medium_cover_image}}">
+                                    <a href="/result/{{searchResultsData[16].id}}" class="movie-beta__link">
+                                    <img alt='' src="{{searchResultsData[16].large_cover_image}}">
                                     </a>
                                 </div>
 
                                 <div class="movie__info">
-                                    <a href='/id={{searchResultsData[16].id}}' class="movie__title">{{searchResultsData[16].title_english}}</a>
+                                    <a href='/result/{{searchResultsData[16].id}}' class="movie__title">{{searchResultsData[16].title_english}}</a>
 
                                     <p class="movie__time">112 min</p>
 
@@ -1004,7 +1000,7 @@
 
                 <div class="col-sm-4 col-sm-offset-4">
                     <button type="button" class="overlay-close">Close</button>
-                    <form id="login-form" class="login" method='get' novalidate=''>
+                    <form "login-form" class="login" method='get' novalidate=''>
                         <p class="login__title">sign in <br><span class="login-edition">welcome to A.Movie</span></p>
 
                         <div class="social social--colored">
@@ -1019,7 +1015,7 @@
                         <input type='email' placeholder='Email' name='user-email' class="login__input">
                         <input type='password' placeholder='Password' name='user-password' class="login__input">
 
-                        <input type='checkbox' id='#informed' class='login__check styled'>
+                        <input type='checkbox' '#informed' class='login__check styled'>
                         <label for='#informed' class='login__check-info'>remember me</label>
                          </div>
 

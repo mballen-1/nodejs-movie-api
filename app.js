@@ -4,7 +4,7 @@ const apis = require('./endpoints');
 
 
 var app = express();
-console.log("dirname: "+__dirname);
+//console.log("dirname: "+__dirname);
 app.use('/static', express.static(__dirname + '/static'));
 
 
@@ -25,13 +25,25 @@ app.get('/example', function(req, res) {
 });
 
 // Other example
-app.get('/:id', function(req, res) {
+app.get('/result/:id', function(req, res) {
     apis.getMovieById( req.params.id, function(response){
-        //console.log(response.data),
-        searchResultsData = response.data.data.movie
-        console.log("TITLE ->" +searchResultsData.title_english)
+        searchResultsData = response.data.data.movie,
+       // console.log(searchResultsData),
+        console.log("TITLE ->" + searchResultsData.title_english),
         res.render('movie-page-full.html', {
             page: 'movie-page-full',
+            port: app.get('port'),
+            searchResultsData : searchResultsData,
+        });
+    });    
+});
+
+app.get('/by_term', function(req, res) {
+    apis.getMoviesByQueryTerm( req.query.query_term, function(response){
+        console.log("term---->" + req.query.query_term),
+        searchResultsData = response.data.data.movies
+        res.render('layout.html', {
+            page: 'home',
             port: app.get('port'),
             searchResultsData : searchResultsData,
         });
@@ -72,18 +84,3 @@ app.get('/index.html', function(req, res) {
 app.listen(app.get('port'), function() {
     console.log('Server started on port', app.get('port'));
 });
-
-
-//result route by search term and limit
-app.get('/result', function(request, res) {
-    apis.getMoviesByQueryTermAndLimit(request.query.search_input, request.query.limit_value, function(response){
-        searchResultsData = response.data.data.movies
-        res.render('example.html', {
-            page: 'example',
-            port: app.get('port'),
-            term: request.query.search_input,
-            searchResultsData: searchResultsData
-        });
-    })   
-});
-
